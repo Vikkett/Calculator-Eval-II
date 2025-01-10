@@ -9,7 +9,7 @@ class MathFun:
         match operator:
             case 'max':
                 if ope1 == ope2:
-                    return EqualityException("Both operands are equal")
+                    raise EqualityException("Both operands are equal")
                 return max(ope1, ope2)
             case 'is_sum_even':
                 return (ope1 + ope2) % 2 == 0
