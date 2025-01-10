@@ -14,7 +14,7 @@ class MathFun:
             case 'is_sum_even':
                 return (ope1 + ope2) % 2 == 0
             case _:
-                raise NotImplementedError
+                raise FunOperatorNotSupportedException("Opperator is not supported")
 
 class MathFunException(Exception):
     pass
