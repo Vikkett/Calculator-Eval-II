@@ -12,7 +12,7 @@ class MathFun:
                     return EqualityException("Both operands are equal")
                 return max(ope1, ope2)
             case 'is_sum_even':
-                raise NotImplementedError
+                return (ope1 + ope2) % 2 == 0
             case _:
                 raise NotImplementedError
 
