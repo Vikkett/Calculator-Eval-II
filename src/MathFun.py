@@ -8,7 +8,9 @@ class MathFun:
 
         match operator:
             case 'max':
-                raise NotImplementedError
+                if ope1 == ope2:
+                    return EqualityException("Both operands are equal")
+                return max(ope1, ope2)
             case 'is_sum_even':
                 raise NotImplementedError
             case _:
